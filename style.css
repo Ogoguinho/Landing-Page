@@ -15,14 +15,49 @@ body{
     grid-template-rows: 2.7% 6% 5.5% 2.3% 3.3% 3.2% 5.2% 11.5% 3% 14.4% 9.3% 21% 5.6% 1fr;
 }
 
+#darkmodeBT{
+
+    background-color: rgba(255, 255, 255 , 0.2);
+    backdrop-filter: blur();
+    border: outset rgb(255, 255, 255) 1px;
+    grid-column: 1;
+    justify-self: flex-end;
+    grid-row: 1;
+    height: 4.5vh;
+    width: 6vw;
+    border-radius: 100px;
+    color: white;
+    font-family: "Questrial", sans-serif;
+    font-size: larger;
+    padding: 0%;
+    display: flex;
+}
+
+.modoescuro{
+
+    background-color: rgb(50, 56, 51);
+    color: white;
+}
+
+#sun{
+
+    fill: white;
+    height: 3.65vh;
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 0.3vw;
+
+}
+
 #mainHeader{
 
     grid-column: 1 / 5;
     grid-row: 1;
     background-color: rgba(43, 73, 33, 1);
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 0.1fr;
     grid-template-rows: 1fr;
-    display: grid;
+    grid-auto-columns: 0.1fr;
+    display: grid   ;
     align-items: center;
 }
 
